@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Guard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nature Guard</h1>
+    </header>
+    <main class="container">
+        <div id="sectionSelection">
+            <button id="disasterRecoveryBtn">Disaster Recovery AI</button>
+            <button id="educationPortalBtn">
+        </div>
+        
+        <!-- Disaster Recovery AI Section -->
+        <div id="disasterRecoverySection" style="display: none;">
+            <div id="scenarioSelection">
+                <button id="beforeDisasterBtn">Before Disaster</button>
+                <button id="afterDisasterBtn">After Disaster</button>
+            </div>
+            <form id="disasterForm" style="display: none;">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="disasterType">Type of Natural Disaster:</label>
+                <select id="disasterType" name="disasterType" required>
+                    <option value="">Select Disaster Type</option>
+                    <option value="storm">Storm</option>
+                    <option value="tornado">Tornado</option>
+                    <option value="hurricane">Hurricane</option>
+                    <option value="earthquake">Earthquake</option>
+                    <option value="flood">Flood</option>
+                    <option value="wildfire">Wildfire</option>
+                </select>
+                
+                <label for="details" id="detailsLabel">Describe your setting and needs:</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="response" style="display: none;">
+                <h2>AI Recommendations:</h2>
+                <div id="aiOutput"></div>
+            </div>
+        </div>
+
+        <!-- Education Portal Section -->
+        <div id="educationPortalSection" style="display: none;">
+            <h2>Natural Disaster Education Portal</h2>
+            <input type="text" id="searchBar" placeholder="Search for natural disasters...">
+            <div id="articleList"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AI-Enhanced Disaster Recovery Hub</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
