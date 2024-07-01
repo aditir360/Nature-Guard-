@@ -1,0 +1,155 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #cad2c5, #84a98c, #52796f, #354f52, #2f3e46);
+}
+
+header {
+    background-color: #354f52; /* Dark teal */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    background: #ffffff; /* White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    color: #354f52; /* Dark teal */
+    margin-bottom: 20px;
+}
+
+#sectionSelection, #scenarioSelection {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sectionSelection button, #scenarioSelection button {
+    padding: 15px 30px;
+    margin: 10px;
+    background: #93a8ac; /* Light grayish cyan */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sectionSelection button:hover, #scenarioSelection button:hover {
+    background: #2f3e46; /* Dark slate gray */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #354f52; /* Dark teal */
+    border-radius: 10px;
+    background-color: #ffffff; /* White */
+}
+
+label {
+    color: #354f52; /* Dark teal */
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background: #354f52; /* Dark teal */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #2f3e46; /* Dark slate gray */
+}
+
+#response {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light gray */
+}
+
+#response h2 {
+    color: #354f52; /* Dark teal */
+}
+
+#aiOutput {
+    background: #ffffff; /* White */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#educationPortalSection {
+    display: none; /* Hide education portal section */
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray */
+    border-radius: 10px;
+}
+
+#searchBar {
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#articleList {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#articleList a {
+    display: block;
+    color: #354f52; /* Dark teal */
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#articleList a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #354f52; /* Dark teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
